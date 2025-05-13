@@ -124,5 +124,12 @@ public function productAdd() {
         return view('dashboard.orders.show', compact('order'));
     }
 
+    public function deleteOrder ($id): RedirectResponse {
+        
+        $order = Order::findOrFail($id);
+        $order->delete();
+        return redirect()->route('dashboard.orders')->with('success', 'Order berhasil dihapus');
+    }
+
    
 }

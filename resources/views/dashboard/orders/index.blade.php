@@ -41,16 +41,16 @@
                                       <td class="px-4 py-2 border"><span class="bg-orange-200 p-4 py-2 rounded-full text-gray-800 font-normal capitalize">{{ $order->status}}</span></td>
 
                                     <td class="px-4 py-2 border">
-                                        <div class="flex gap-2 mx-auto">
+                                        <div class="flex gap-2 justify-center mx-auto">
 
                                             <a href="{{ route('dashboard.orders.show', $order->id) }}" class="bg-blue-600 hover:bg-blue-800 p-2 rounded-lg text-white">Detail</a>
-                                            {{-- <form action="{{ route('dashboard.products.delete', $order->id) }}"
+                                            <form action="{{ route('dashboard.orders.delete', $order->id) }}"
                                                 method="POST" class="inline-block"
-                                                onsubmit="return confirm('Yakin ingin menghapus produk ini?')">
+                                                onsubmit="return confirm('Yakin ingin menghapus order ini?')">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button class="bg-red-600 p-4 rounded-lg text-white">Hapus</button>
-                                            </form> --}}
+                                                <button class="bg-red-600 p-2 rounded-lg text-white">Hapus</button>
+                                            </form>
 
                                         </div>
 

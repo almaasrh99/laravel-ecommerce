@@ -13,7 +13,7 @@
                 <div class="flex justify-between items-center mb-4">
                     <h2 class="text-xl font-bold text-gray-800">Daftar Produk</h2>
                     <a href="{{ route('dashboard.products.create') }}"
-                        class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded">
+                        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">
                         + Tambah Produk
                     </a>
                 </div>
