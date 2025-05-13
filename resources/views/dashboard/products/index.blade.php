@@ -61,8 +61,7 @@
                                         <div class="flex h-full gap-2 mx-auto">
 
                                             <a href="{{ route('dashboard.products.edit', $product->id) }}" class="bg-orange-600 p-2 rounded-lg text-white">Edit</a>
-                                            <form action="{{ route('dashboard.products.delete', $product->id) }}"
-                                                method="POST" class="inline-block"
+                                            <form action="{{ route('dashboard.products.delete', $product->id) }}" method="POST" class="inline-block"
                                                 onsubmit="return confirm('Yakin ingin menghapus produk ini?')">
                                                 @csrf
                                                 @method('DELETE')

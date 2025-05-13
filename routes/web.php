@@ -32,11 +32,10 @@ Route::middleware(['auth','verified' ,'isAdmin'])->group(function () {
 });
 
 //Admin Orders//
-
 Route::middleware(['auth','verified' ,'isAdmin'])->group(function () {
     Route::get('/dashboard/orders', [AdminController::class, 'listOrder'])->name('dashboard.orders');
     Route::get('/dashboard/orders/{id}', [AdminController::class, 'showOrder'])->name('dashboard.orders.show');
-    Route::delete('/dashboard/products/{id}', [AdminController::class, 'deleteOrder'])->name('dashboard.orders.delete');
+    Route::delete('/dashboard/orders/{id}', [AdminController::class, 'deleteOrder'])->name('dashboard.orders.delete');
    
 
 });
