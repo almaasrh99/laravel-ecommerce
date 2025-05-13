@@ -43,7 +43,7 @@
                                     <td class="px-4 py-2 border">
                                         <div class="flex gap-2 mx-auto">
 
-                                            <a href="{{ route('dashboard.orders.show', $order->id) }}" class="bg-green-600 hover:bg-green-800 p-2 rounded-lg text-white">Detail</a>
+                                            <a href="{{ route('dashboard.orders.show', $order->id) }}" class="bg-blue-600 hover:bg-blue-800 p-2 rounded-lg text-white">Detail</a>
                                             {{-- <form action="{{ route('dashboard.products.delete', $order->id) }}"
                                                 method="POST" class="inline-block"
                                                 onsubmit="return confirm('Yakin ingin menghapus produk ini?')">
